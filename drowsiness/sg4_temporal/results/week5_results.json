@@ -1,0 +1,130 @@
+{
+  "configs": {
+    "C0_baseline_W4": {
+      "PERCLOS_WINDOW_SEC": 60.0,
+      "PERCLOS_WARMUP_SEC": 60.0,
+      "MICROSLEEP_SEC": 1.0,
+      "SLOW_BLINK_FACTOR": 1.5,
+      "BLINK_BASELINE_SEC": 120.0
+    },
+    "C1_short_window": {
+      "PERCLOS_WINDOW_SEC": 30.0,
+      "PERCLOS_WARMUP_SEC": 30.0,
+      "MICROSLEEP_SEC": 1.0,
+      "SLOW_BLINK_FACTOR": 1.5,
+      "BLINK_BASELINE_SEC": 60.0
+    },
+    "C2_sensitive": {
+      "PERCLOS_WINDOW_SEC": 30.0,
+      "PERCLOS_WARMUP_SEC": 30.0,
+      "MICROSLEEP_SEC": 0.5,
+      "SLOW_BLINK_FACTOR": 1.3,
+      "BLINK_BASELINE_SEC": 60.0
+    },
+    "C3_conservative": {
+      "PERCLOS_WINDOW_SEC": 90.0,
+      "PERCLOS_WARMUP_SEC": 90.0,
+      "MICROSLEEP_SEC": 1.5,
+      "SLOW_BLINK_FACTOR": 1.8,
+      "BLINK_BASELINE_SEC": 120.0
+    }
+  },
+  "results": {
+    "synthetic": {
+      "C0_baseline_W4": {
+        "false_alarm_time_alert_phase": 0.0,
+        "false_microsleeps_alert_phase": 0,
+        "warning_delay_s": 11.5,
+        "drowsy_delay_s": 38.69999999999999,
+        "microsleeps_detected": "4/4",
+        "mean_microsleep_latency_s": 1.0,
+        "drowsy_time_in_drowsy_phase": 0.83875,
+        "perclos_flag_toggles": 1,
+        "level_changes": 2
+      },
+      "C1_short_window": {
+        "false_alarm_time_alert_phase": 0.0,
+        "false_microsleeps_alert_phase": 0,
+        "warning_delay_s": 8.73333333333332,
+        "drowsy_delay_s": 23.53333333333336,
+        "microsleeps_detected": "4/4",
+        "mean_microsleep_latency_s": 1.0,
+        "drowsy_time_in_drowsy_phase": 0.9019444444444444,
+        "perclos_flag_toggles": 1,
+        "level_changes": 2
+      },
+      "C2_sensitive": {
+        "false_alarm_time_alert_phase": 0.45652777777777775,
+        "false_microsleeps_alert_phase": 3,
+        "warning_delay_s": 0.0,
+        "drowsy_delay_s": 0.0,
+        "microsleeps_detected": "4/4",
+        "mean_microsleep_latency_s": 0.5,
+        "drowsy_time_in_drowsy_phase": 1.0,
+        "perclos_flag_toggles": 1,
+        "level_changes": 5
+      },
+      "C3_conservative": {
+        "false_alarm_time_alert_phase": 0.0,
+        "false_microsleeps_alert_phase": 0,
+        "warning_delay_s": 35.30000000000001,
+        "drowsy_delay_s": 53.43333333333334,
+        "microsleeps_detected": "2/4",
+        "mean_microsleep_latency_s": 1.5,
+        "drowsy_time_in_drowsy_phase": 0.7773611111111111,
+        "perclos_flag_toggles": 1,
+        "level_changes": 2
+      }
+    },
+    "session": {
+      "C0_baseline_W4": {
+        "duration_s": 505.13599999999997,
+        "first_warning_s": 31.551,
+        "first_drowsy_s": 31.551,
+        "time_alert": 0.3466723277783675,
+        "time_warning": 0.01804479354633266,
+        "time_drowsy": 0.6352828786752999,
+        "microsleeps": 9,
+        "max_perclos": 0.6638813644919899,
+        "perclos_flag_toggles": 7,
+        "level_changes": 7
+      },
+      "C1_short_window": {
+        "duration_s": 505.13599999999997,
+        "first_warning_s": 31.551,
+        "first_drowsy_s": 31.551,
+        "time_alert": 0.480097654176839,
+        "time_warning": 0.07727417471605987,
+        "time_drowsy": 0.4426281711071012,
+        "microsleeps": 9,
+        "max_perclos": 0.9459954690831563,
+        "perclos_flag_toggles": 11,
+        "level_changes": 8
+      },
+      "C2_sensitive": {
+        "duration_s": 505.13599999999997,
+        "first_warning_s": 21.853,
+        "first_drowsy_s": 21.853,
+        "time_alert": 0.3802144146056682,
+        "time_warning": 0.06570427767752893,
+        "time_drowsy": 0.5540813077168029,
+        "microsleeps": 14,
+        "max_perclos": 0.9459954690831563,
+        "perclos_flag_toggles": 11,
+        "level_changes": 9
+      },
+      "C3_conservative": {
+        "duration_s": 505.13599999999997,
+        "first_warning_s": 32.094,
+        "first_drowsy_s": 32.094,
+        "time_alert": 0.20401231291794927,
+        "time_warning": 0.0,
+        "time_drowsy": 0.7959876870820507,
+        "microsleeps": 9,
+        "max_perclos": 0.6638813644919899,
+        "perclos_flag_toggles": 7,
+        "level_changes": 5
+      }
+    }
+  }
+}
