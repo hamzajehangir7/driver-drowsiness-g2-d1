@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import cv2
 import numpy as np
 
-from . import config
+from .. import config
 
 # ---------------- Mouth ----------------
 # Inner-lip points from MediaPipe Face Mesh.
