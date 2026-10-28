@@ -9,7 +9,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from . import config
+from .. import config
 
 
 @dataclass

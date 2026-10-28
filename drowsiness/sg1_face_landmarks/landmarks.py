@@ -12,12 +12,12 @@ import cv2
 import mediapipe as mp
 import numpy as np
 
-from . import config
+from .. import config
 
 MODEL_URL = ("https://storage.googleapis.com/mediapipe-models/face_landmarker/"
              "face_landmarker/float16/1/face_landmarker.task")
-MODEL_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                          "models", "face_landmarker.task")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "face_landmarker.task")
 
 
 @dataclass

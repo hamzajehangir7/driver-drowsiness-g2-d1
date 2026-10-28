@@ -4,8 +4,8 @@ from collections import deque
 import cv2
 import numpy as np
 
-from . import config
-from .eye import LEFT_EYE, RIGHT_EYE
+from .. import config
+from ..sg2_eye_blink.eye import LEFT_EYE, RIGHT_EYE
 
 GREEN = (80, 200, 80)
 RED = (60, 60, 230)

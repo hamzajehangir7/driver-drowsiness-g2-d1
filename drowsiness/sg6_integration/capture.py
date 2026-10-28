@@ -9,7 +9,7 @@ import time
 
 import cv2
 
-from . import config
+from .. import config
 
 
 def list_cameras():

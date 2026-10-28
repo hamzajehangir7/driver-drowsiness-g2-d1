@@ -9,3 +9,6 @@ __pycache__/
 *.mov
 # raw face images/videos must not be committed (privacy) — keep only feature logs
 data/raw/
+
+# course handouts (contain class roster) - not part of the code
+*.pdf

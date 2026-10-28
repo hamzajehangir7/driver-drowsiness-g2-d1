@@ -9,7 +9,7 @@
 """
 from dataclasses import dataclass, field
 
-from . import config
+from .. import config
 
 ALERT, WARNING, DROWSY = 0, 1, 2
 LEVEL_NAMES = {ALERT: "ALERT", WARNING: "WARNING", DROWSY: "DROWSY"}
