@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from . import config
+from .. import config
 
 # MediaPipe Face Mesh indices, ordered p1..p6 for the EAR formula:
 #   p1, p4 = eye corners;  p2/p6 and p3/p5 = upper/lower eyelid pairs

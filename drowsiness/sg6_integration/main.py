@@ -13,16 +13,16 @@ import time
 
 import cv2
 
-from . import config
-from .alert import Alarm
-from .calibration import Calibrator
+from .. import config
+from ..calibration import Calibrator
+from ..sg1_face_landmarks.landmarks import FaceLandmarkDetector
+from ..sg2_eye_blink.eye import EyeAnalyzer
+from ..sg3_yawn_head.mouth_head import MouthHeadAnalyzer
+from ..sg4_temporal.temporal import TemporalAnalyzer
+from ..sg5_decision.alert import Alarm
+from ..sg5_decision.decision import DecisionEngine
 from .capture import Camera, list_cameras
-from .decision import DecisionEngine
 from .display import Display
-from .eye import EyeAnalyzer
-from .landmarks import FaceLandmarkDetector
-from .mouth_head import MouthHeadAnalyzer
-from .temporal import TemporalAnalyzer
 
 WINDOW = "Driver Drowsiness Monitoring - G2-D1"
 
