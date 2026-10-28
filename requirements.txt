@@ -1,0 +1,4 @@
+opencv-python
+mediapipe
+numpy
+pygrabber; sys_platform == "win32"

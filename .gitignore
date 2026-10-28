@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+*.mp4
+*.avi
+*.mov
+# raw face images/videos must not be committed (privacy) — keep only feature logs
+data/raw/
